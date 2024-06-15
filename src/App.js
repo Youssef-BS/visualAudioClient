@@ -1,4 +1,4 @@
-import React, { useEffect  } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
@@ -58,7 +58,7 @@ import AllNewsRoom from './Pages/AllNews';
                     element={<Layout><Explore /></Layout>}
                 />
                 <Route
-                    path="/ProductDetail"
+                    path="/ProductDetail/:id"
                     element={<Layout><ProductDetail /></Layout>}
                 />
                 <Route
@@ -71,7 +71,7 @@ import AllNewsRoom from './Pages/AllNews';
                 />
                 <Route
                     path="/AllNews"
-                    element={<Layout><AllNewsRoom /></Layout>}
+                    element={<Layout><AllNews /></Layout>}
                 />
             </Routes>
         </Router>
